@@ -1,9 +1,8 @@
 #Estrutor condicional if
 idade = int(input('Digite a idade:'))
 
-if idade >= 100:
-    print('Muito VEIO!!!')
+if idade >= 18: 
+    print('Maior de idade')
 else:
-    print('Novinho do veio')
+    print('Menor de idade')
 
-print('Viva ao Adiba Elias')
