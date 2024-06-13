@@ -7,8 +7,24 @@ if sexo.upper() == 'M':
 elif sexo.upper == 'F' :
     pesoideal = (62.1*altura)-44.7
 else:
-    print('O sexo informado deve ser 'M' para masculino ou 'F' para feminino')
+    print('O sexo informado deve ser M para masculino ou F para feminino')
 
 if(pesoideal >0):
     print('Sexo informado foi: ', sexo.upper())
     print('Peso ideal: ', round(pesoideal, 2))
+
+imc = float(pesoideal/(altura**2))
+print('Seu IMC é', imc)
+
+if imc <18.5:
+    print('Abaixo do peso')
+elif imc >= 18.5 < 25:
+    print('Peso normal')
+elif imc >= 25 < 30:
+    print('Sobrepeso')
+elif imc >= 30 < 35:
+    print('Obesidade grau 1')
+elif imc >= 35 < 40:
+    print('Titanic')
+else:
+    print('Thais carla.')
