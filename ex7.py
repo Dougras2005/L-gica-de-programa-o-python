@@ -15,7 +15,9 @@ mediaM = 0.0
 maior = 0
 menor = 99
 
-while contador <= 5:
+qtde = int(input('Digite a quantidade de aluno'))
+
+while contador < qtde:
     sexo = input('Digite o sexo: ')
     altura =float(input('Digite a altura: '))
 
